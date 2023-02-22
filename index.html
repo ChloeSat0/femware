@@ -1,2 +1,139 @@
-<title>Femware</title>
-<h1>Hello World!</h1>
+<head>
+    <title>FemWare</title>
+    <link rel="stylesheet" href="./src/pbtheme/pizzabagel.css">
+    <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta content="FemWare" property="og:title" />
+    <meta content="A anarchy server where you can unleash your freedom" property="og:description" />
+    <meta content="https://web.femware.ga" property="og:url" />
+    <meta content="./src/images/fem.png" property="og:image" />
+    <meta content="#2986cc" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="./src/images/fem.png">
+</head>
+
+<header>
+  <div class="hdtitle">
+    FemWare
+  </div>
+</header>
+
+<body>
+  <br><br>
+  <center><img src="./src/images/Fem.png" width="256" height="256" alt="logo" draggable="false">
+  <br><br>
+  <div class="btitle"><b>FemWare</b></div>
+  <div class="btext">
+     FemWare.ga is a Minecraft 1.19.3 anarchy server which has hosted over 800 player and has a<br>
+     over 20gb map. It's objective is to never reset and host a tight knit and friendly community<br>
+     Join today!
+    </div><br><br>
+    <div class="btext">VVV Copy the IP VVV</div>
+    <button onclick="Copy()" class="ipbut">Copy</button>
+    <input type="text" class="ipbox" id="ip" value="femware.ga">
+</center>
+  <br><br><br><br>
+  <br><br><br><br><br><br>
+  <center>
+  <div class="gtkus">
+      <b>VVV Read more about FemWare VVV</b>
+  </div>
+</center>
+  <br><br><br><br>
+  <!-- Slideshow container -->
+<div class="parentcontainer">
+  <div class="descriptioncontainer">
+    <div class="dctitle">
+      It's a Fun project.<br>
+      <br>
+    </div>
+    <div class="dctext">
+      FemWare.ga is not supposed to be a 2b2t clone, nor<br>
+      bring me income, it's just supposed to be a fun server<br>
+      where everybody from all over the world can participate in<br>
+      harmless fun and make new friends or even start their own giant<br>
+      groups where they build, pvp or even destroy the server more.<br><br>
+      It's just a fun project. It'll never be a pay2play server or a pay2win one<br>
+      It'll stay as it is right now, with more patches but the same.
+    </div>
+  </div>
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <img src="./src/images/server1.png" style="width:100%">
+    <div class="text">A normal picture of spawn</div>
+  </div>
+
+  <div class="mySlides">
+    <img src="./src/images/server2.png" style="width:100%">
+    <div class="text">The Underground Melon Farm</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext"></div>
+    <img src="./src/images/server3.png" style="width:100%">
+    <div class="text">The oldest pyramid on the server</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+  </div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+
+  </script>
+  <script>
+      function Copy() {
+        // Get the text field
+        var copyText = document.getElementById("ip");
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText.value);
+        
+        // Alert the copied text
+        alert("The text has been copied to your clipboard! Feel free to leave now!");
+      }
+  </script>
+</body>
+
+<footer>
+  <div class="copyright">© 2023 FemWare.ga</div>
+  <center>
+    <a class="contact" href="./contact.html">Contact</a>
+  </center>
+</footer>
