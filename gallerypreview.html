@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+    Coded by: trans_girl
+    I hope you have a fun time editing and fooling around
+    with my code, I left a bunch of comments regarding it!
+-->
+<head>
+    <title>FemWare</title>
+    <!-- 
+        The code below is dedicated to importing the
+        website logo and the css stylesheet used to make
+        the website look good.
+
+        If you remove the icon it'll be fine although
+        if you remove the stylesheet the whole website
+        will look like a mess and will be barely usable.
+    -->
+    <link rel="icon" href="./src/assets/logo/64.ico">
+    <link rel="stylesheet" href="./src/css/lullaby.css">
+    <!--
+        The code below with the "meta" tag may seem confusing,
+        but its not! This code basically translates the content
+        you see on your personal computer to a friendlier and
+        easier to use layout on your mobile device, like a phone,
+        tablet, or even a smartfridge!
+    -->
+    <meta name="viewport" content="width=device-width, inital-scale=1">    
+</head>
+
+<!-- Allows us to start working on our main box where all the content will be 
+     shown!-->
+<header>
+    <!-- Shows the website title which is "FemWare" -->
+    <div class="wtitle">FemWare</div>
+    <!-- The main div, or the "parent" div where all the content will be
+         shown (class=browsing) -->
+    <div class="browsing">
+        <!-- We are now importing the DIV where the option menu will be! -->
+        <div class="btask">
+            <!-- The buttons for our pages! -->
+            <!-- Take notice that the class is basically a div! -->
+            <center>
+                <a class= "btbutton" href="./index.html">Home</a>
+                <a class= "btbutton" href="./gallery.html">Gallery</a>
+                <a class= "btbutton" href="./contact.html">Contact</a>
+                <a class= "btbutton" href="./donate.html">Donate</a>
+                <a class= "btbutton" href="./about.html">About</a>
+            </center>
+        </div>
+        <div class="slideshow-container">
+            <!-- Add your images here -->
+            <img class="mySlides" src="./src/assets/screenshots/image1.png">
+            <img class="mySlides" src="./src/assets/screenshots/image2.png">
+            <img class="mySlides" src="./src/assets/screenshots/image3.png">
+            <img class="mySlides" src="./src/assets/screenshots/image4.png">
+            <img class="mySlides" src="./src/assets/screenshots/image5.png">
+            <img class="mySlides" src="./src/assets/screenshots/image6.png">
+            <img class="mySlides" src="./src/assets/screenshots/image7.png">
+            <img class="mySlides" src="./src/assets/screenshots/image8.png">
+            <img class="mySlides" src="./src/assets/screenshots/image9.png">
+            <img class="mySlides" src="./src/assets/screenshots/image10.png">
+            <img class="mySlides" src="./src/assets/screenshots/image11.png">
+            <img class="mySlides" src="./src/assets/screenshots/image12.png">
+            <img class="mySlides" src="./src/assets/screenshots/image13.png">
+            <!-- Add navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- We are now importing a DIV that dedicates itself to format text! -->
+        <div class="btitle">
+            <b>- Server Gallery - </b>
+        </div>
+
+        <!-- A small description of this page! -->
+        <div class="btext">
+            This page is dedicated to storing all the screenshots that<br>
+            are publicly shared among our community! Feel free to look at them!
+        </div>
+
+        <!-- Categories for our gallery! -->
+        <div class="bcategory">
+            <b> Spawn: </b>
+        </div>
+        <a class="ccategory" href="./spawn/bases.html">Bases</a>
+        <a class="ccategory" href="./spawn/bases.html">Zero Zero</a>
+        <a class="ccategory" href="./spawn/bases.html">Screenshots</a>
+
+        <div class="bcategory">
+            <b> Events: </b>
+        </div>
+        <a class="ccategory" href="./spawn/bases.html">Builds</a>
+        <a class="ccategory" href="./spawn/bases.html">Screenshots</a>
+        
+        <div class="bcategory">
+            <b> Players: </b>
+        </div>
+        <a class="ccategory" href="./spawn/bases.html">Bases</a>
+        <a class="ccategory" href="./spawn/bases.html">Builds</a>
+        <a class="ccategory" href="./spawn/bases.html">Screenshots</a>
+
+        <!-- Getting into the complicated territory! I got ChatGPT to write me a whole 
+            automatically scrolling html image slideshow! Here's the code for it! -->
+            <script>
+                var slideIndex = 0;
+                showSlides();
+          
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  slides[slideIndex-1].style.display = "block";  
+                  setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+          
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+              </script>
+    </div>
+</header>

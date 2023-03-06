@@ -1,0 +1,209 @@
+/** Lullaby, a calm, sweet, and simplistic theme for
+    web.femware.ga, the website dedicated to the anarchy
+    server femware.ga **/
+
+/** Author: trans_girl **/
+
+/** Imports fancy fonts! **/
+@import url("https://fonts.googleapis.com/css?family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+/** Turns the background to a Beige color **/
+html {
+    background-color: #F3EFE0;
+    height: 100%;
+}
+
+/** Centers the browsing box of the website. **/
+header {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+
+    height: 100%;
+    padding-bottom: 80px;
+}
+
+/** This is the website title, the most important part! **/
+.wtitle {
+    font-family: 'Tilt Warp', sans-serif;
+    font-size: 40px;
+    color: white;
+
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0em;
+}
+
+/** This makes our center browsing box. Pay attention to the .
+    in the beginning, it specifies this element as a DIV and
+    not as a normal CSS item like header or body **/
+.browsing {
+    background-color: #434242;
+    min-width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 5px;
+
+    padding-bottom: 28px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+/** The div that'll host our buttons, it's basically the taskbar on windows! */
+.btask {
+    background-color: #4f4f4f;
+    width: 100%;
+    height: 8%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    margin-bottom: 12px;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/** A simple formatting div for our buttons, this is very important! */
+.btbutton {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    color: white;
+
+    text-decoration: none;
+    text-shadow: rgba(0, 0, 0, 0.582) 0.1em 0.1em 0em;
+
+    float: center;
+    padding-left: 20px;
+}
+
+/** The animation we'll be using to highlight our divs and make them seem a bit more
+    alive **/
+
+.btbutton:hover {
+    color: #22A39F;
+
+    transition: color 0.5s ease-in-out;
+}
+/** This is dedicated to formating text inside our main element
+    'browsing'! **/
+
+.btitle {
+    font-family: 'Tilt Warp', sans-serif;
+    color: #22A39F;
+    text-align: center;
+
+    font-size: 30px;
+    margin-top: 10px;
+    text-shadow: black 0.1em 0.1em 0em;
+}
+
+/** A simple, yet aesthetic animation for our text! **/
+
+.btitle:hover {
+    letter-spacing: 2px;
+    transition: all .5s ease-in-out;
+}
+
+/** Formating div for the text we'll be using to talk about our server! **/
+
+.btext {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    color: white;
+
+    text-align: center;
+
+    margin-top: 8px;
+    margin-right: 80px;
+    margin-left: 80px;
+    text-shadow: black 0.1em 0.1em 0em;
+}
+
+/** Here is the code that ChatGPT wrote for our automatically scrolling images! **/
+ 
+/* Set the container size and position */
+      .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+
+        border-radius: 20px;
+      }
+      
+/* Set the size and position of the images */
+      .mySlides {
+        display: none;
+        width: 100%;
+        height: 400px;
+      }
+      
+/* Add navigation buttons */
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 16px;
+        margin-top: -22px;
+        border-radius: 0 3px 3px 0;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+        transition: 0.6s ease;
+        user-select: none;
+      }
+      
+/* Position the previous button */
+      .prev {
+        left: 0;
+        border-radius: 200px;
+
+        margin-left: 10px;
+      }
+      
+/* Position the next button */
+      .next {
+        right: 0;
+        border-radius: 200px;
+
+        margin-right: 10px;
+      }
+
+/** AI sure is smart! **/
+
+/** Start of the category page! **/
+.bcategory {
+    font-family: 'Tilt Warp', sans-serif;
+    color: #22A39F;
+    text-align: left;
+
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-shadow: black 0.1em 0.1em 0em;
+}
+
+/** Category button formating **/
+.ccategory {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+
+    font-size: 28px;
+    margin-top: 18px;
+    margin-left: 38px;
+    text-shadow: black 0.1em 0.1em 0em;
+}
+
+/** Simple animation for our simple category button! **/
+.ccategory:hover {
+    color: #22A39F;
+    font-size: 32px;
+
+    transition: all 0.5s ease-in;
+}

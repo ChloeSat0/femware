@@ -1,29 +1,57 @@
+<!DOCTYPE html>
+<!--
+    Coded by: trans_girl
+    I hope you have a fun time editing and fooling around
+    with my code, I left a bunch of comments regarding it!
+-->
 <head>
     <title>FemWare</title>
-    <link rel="stylesheet" href="./src/pbtheme/pizzabagel.css">
-    <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico">
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <meta content="FemWare" property="og:title" />
-    <meta content="A anarchy server where you can unleash your freedom" property="og:description" />
-    <meta content="https://web.femware.ga" property="og:url" />
-    <meta content="./src/images/fem.png" property="og:image" />
-    <meta content="#2986cc" data-react-helmet="true" name="theme-color" />
-    <meta name="twitter:card" content="./src/images/fem.png">
+    <!-- 
+        The code below is dedicated to importing the
+        website logo and the css stylesheet used to make
+        the website look good.
+
+        If you remove the icon it'll be fine although
+        if you remove the stylesheet the whole website
+        will look like a mess and will be barely usable.
+    -->
+    <link rel="icon" href="./src/assets/logo/64.ico">
+    <link rel="stylesheet" href="./src/css/lullaby.css">
+    <!--
+        The code below with the "meta" tag may seem confusing,
+        but its not! This code basically translates the content
+        you see on your personal computer to a friendlier and
+        easier to use layout on your mobile device, like a phone,
+        tablet, or even a smartfridge!
+    -->
+    <meta name="viewport" content="width=device-width, inital-scale=1">    
 </head>
 
+<!-- Allows us to start working on our main box where all the content will be 
+     shown!-->
 <header>
-    <div class="hdtitle">FemWare</div>
+    <!-- Shows the website title which is "FemWare" -->
+    <div class="wtitle">FemWare</div>
+    <!-- The main div, or the "parent" div where all the content will be
+         shown (class=browsing) -->
+    <div class="browsing">
+        <!-- We are now importing the DIV where the option menu will be! -->
+        <div class="btask">
+            <!-- The buttons for our pages! -->
+            <!-- Take notice that the class is basically a div! -->
+            <center>
+                <a class= "btbutton" href="./index.html">Home</a>
+                <a class= "btbutton" href="./gallery.html">Gallery</a>
+                <a class= "btbutton" href="./contact.html">Contact</a>
+                <a class= "btbutton" href="./donate.html">Donate</a>
+                <a class= "btbutton" href="./about.html">About</a>
+            </center>
+        </div>
+        <div class="btitle">- Contact -</div>
+        <div class="btext">
+           All messages <b>must</b> be sent to the official e-mail below. <b>Any other e-mail claming to be the
+           official e-mail may be a scam and might try to phish you for your information stay safe.</b><br><br>
+           <font size=6px><font color="#22A39F">femwarega@gmail.com</font></font>
+        </div>
+    </div>
 </header>
-
-<body>
-  <br><br>
-  <center><img src="./src/images/Fem.png" width="256" height="256" alt="logo" draggable="false">
-  <br><br>
-  <div class="btitle"><b>Contact Us:</b></div>
-  <div class="btext">If you wish to contact us send an e-mail to<br>
-    <font color="red">femwarega@gmail.com</font><br>
-    please remember any type of spam will be ignored and may result<br>
-    in a block from our e-mail.<br><br>
-    <a class="hdtitle" href="./index.html">go back</button>
-</div>
